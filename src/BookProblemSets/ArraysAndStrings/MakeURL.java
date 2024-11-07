@@ -12,6 +12,7 @@ public class MakeURL {
     {
         int spaceCount = 0;
 
+        // count the amount of spaces
         for (char c: phrase.toCharArray())
         {
             if (c == ' ')
@@ -20,6 +21,8 @@ public class MakeURL {
             }
         }
 
+        // Get phrase length (already accounts for spaces)
+        // Then multiple amount of spaces by 2 (3 characters per space, 1 character is already included per in phrase length, so adding 2 per)
         int newLength = phrase.length() + (spaceCount * 2);
         String[] url = new String[newLength];
         int currentPos = 0;
