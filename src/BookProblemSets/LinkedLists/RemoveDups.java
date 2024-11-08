@@ -37,8 +37,6 @@ public class RemoveDups {
             {
                 currentNode = currentNode.next;
             }
-
-
         }
 
         list.printList();
