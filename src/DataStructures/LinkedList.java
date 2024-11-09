@@ -57,6 +57,12 @@ public class LinkedList<T> {
         this.tail = this.tail.next;
     }
 
+    public void addNode(ListNode<T> node)
+    {
+        this.tail.next = node;
+        this.tail = this.tail.next;
+    }
+
     public void insertHead(T val)
     {
         ListNode newNode = new ListNode(val);
